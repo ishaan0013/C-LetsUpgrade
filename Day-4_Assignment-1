@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"Using for loop\n";
+    int i, c=0, j;
+    cout<<"First 10 prime numbers are:\n";
+    for(i=1; i<=29; i++)
+    {
+        for(j=2; j<i; j++)
+        {
+           if(i%j==0)
+           {
+               c++;
+               break;
+           }
+        }
+        if(c==0 && i!=1)
+            cout<<i<<endl;
+        c = 0;
+    }
+    cout<<endl;
+
+}
