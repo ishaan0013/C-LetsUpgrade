@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main(void)
+{
+int number;
+cout<<"Assignment operators:- \n";
+cout<<"Enter the value of number:";
+cin>>number;
+number+=5;        
+cout<<"\n Number after += is: "<<number;
+number-=5;        
+cout<<"\nNumber after -= is: "<<number;
+number*=5;        
+cout<<"\nNumber after *= is: "<<number;
+cout<<"\nComparison operators:-\n";
+int a=10,b=20,c=10;
+if(a==c){cout<<"Here we use equal to operator\n";}
+if(b>a){cout<<"Here we use greater than operator\n";}
+if(a<=b){cout<<"here we use less than or equal to operator\n";}
+cout<<"\nLogical operators:-\n";
+if(a<b && c<b){cout<<"Here we use logical and operator\n";}
+if(b>a || a<b){cout<<"Here we use logical or operator\n";}
+if(a!=b){cout<<"Here we use not operator\n";}
+
+}
